@@ -6,6 +6,9 @@
 *.jar
 *.war
 
+# maven output
+target/
+
 # gwt caches and compiled units #
 war/gwt_bree/
 gwt-unitCache/
