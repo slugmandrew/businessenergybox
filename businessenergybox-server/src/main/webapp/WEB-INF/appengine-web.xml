@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+    
+    <!-- Google App Engine application project name like myproject.appspot.com -->
+    <application>business-energy-box</application>
+    <version>mod1</version>
+    
+    <!--<vm>true</vm>-->
+    <threadsafe>true</threadsafe>
+    <sessions-enabled>true</sessions-enabled>
+    
+    <!-- Configure serving/caching of GWT files -->
+    <static-files>
+        <include path="**"/>
+        <include path="**.nocache.*" expiration="0s"/>
+        <include path="**.cache.*" expiration="365d"/>
+        <exclude path="**.gwt.rpc"/>
+    </static-files>
+    
+    <!-- Configure java.util.logging -->
+    <system-properties>
+        <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+    </system-properties>
+    
+    <!--<env-variables>-->
+    <!--<env-var name="ALPN_ENABLE" value="true"/>    &lt;!&ndash; OPTIONAL &ndash;&gt;-->
+    <!--<env-var name="DBG_ENABLE" value="true"/>     &lt;!&ndash; OPTIONAL: Enable Stackdriver Debugger &ndash;&gt;-->
+    <!--<env-var name="CPROF_ENABLE" value="true"/>   &lt;!&ndash; OPTIONAL: enable profiling &ndash;&gt;-->
+    <!--</env-variables>-->
+
+</appengine-web-app>
