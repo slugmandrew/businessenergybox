@@ -47,16 +47,16 @@
                     <moduleName>com.usav.beb.App</moduleName>
                     <moduleShortName>app</moduleShortName>
                 </configuration>
-                <executions>
-                    <!-- Generate the module and add it to the webappDirectory/classes/... -->
-                    <execution>
-                        <id>generate-module</id>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>generate-module</goal>
-                        </goals>
-                    </execution>
-                </executions>
+                <!--<executions>-->
+                    <!--&lt;!&ndash; Generate the module and add it to the webappDirectory/classes/... &ndash;&gt;-->
+                    <!--<execution>-->
+                        <!--<id>generate-module</id>-->
+                        <!--<phase>generate-resources</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>generate-module</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
             </plugin>
         </plugins>
     </build>

@@ -58,7 +58,7 @@
                 <configuration>
                     <enableJarClasses>false</enableJarClasses>
                     <enableJarSplitting>true</enableJarSplitting>
-                    <appDir>${webappDirectory}</appDir>
+                    <!--<appDir>${webappDirectory}</appDir>-->
                     
                     <!-- Comment in the below snippet to bind to all IPs instead of just localhost -->
                     <address>0.0.0.0</address>

@@ -41,7 +41,7 @@ public class App implements EntryPoint
      */
     public void onModuleLoad()
     {
-        final Button sendButton = new Button("Call the A-Team");
+        final Button sendButton = new Button("Call teh A-Team");
         final TextBox nameField = new TextBox();
         nameField.setText("Yo Name, Sucka!");
         final Label errorLabel = new Label();

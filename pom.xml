@@ -43,12 +43,12 @@
         <plugins>
             <plugin>
                 <groupId>net.ltgt.gwt.maven</groupId>
-                <artifactId>gwt-maven-plugin</artifactId>
-                <inherited>false</inherited>
-                <configuration>
-                    <launcherDir>${project.build.directory}/gwt/launcherDir</launcherDir>
-                </configuration>
-            </plugin>
+            <artifactId>gwt-maven-plugin</artifactId>
+            <inherited>false</inherited>
+            <configuration>
+                <launcherDir>businessenergybox-server/target/businessenergybox-server-${project.version}</launcherDir>
+            </configuration>
+        </plugin>
         </plugins>
         <pluginManagement>
             <plugins>
