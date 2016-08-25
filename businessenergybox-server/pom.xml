@@ -71,23 +71,24 @@
             </plugin>
         
         </plugins>
-        
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.eclipse.jetty</groupId>
-                    <artifactId>jetty-maven-plugin</artifactId>
-                    <configuration>
-                        <skip>false</skip>
-                        <scanIntervalSeconds>1</scanIntervalSeconds>
-                        <!-- is this refreshing the resources from /shared every 1 second? -->
-                        <webApp>
-                            <extraClasspath>${basedir}/../businessenergybox-shared/target/classes/</extraClasspath>
-                        </webApp>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
+    
+        <!-- Can I remove this as it's only for Jetty? -->
+        <!--<pluginManagement>-->
+            <!--<plugins>-->
+                <!--<plugin>-->
+                    <!--<groupId>org.eclipse.jetty</groupId>-->
+                    <!--<artifactId>jetty-maven-plugin</artifactId>-->
+                    <!--<configuration>-->
+                        <!--<skip>false</skip>-->
+                        <!--<scanIntervalSeconds>1</scanIntervalSeconds>-->
+                        <!--&lt;!&ndash; is this refreshing the resources from /shared every 1 second? &ndash;&gt;-->
+                        <!--<webApp>-->
+                            <!--<extraClasspath>${basedir}/../businessenergybox-shared/target/classes/</extraClasspath>-->
+                        <!--</webApp>-->
+                    <!--</configuration>-->
+                <!--</plugin>-->
+            <!--</plugins>-->
+        <!--</pluginManagement>-->
     </build>
     
     
@@ -119,29 +120,30 @@
                 </property>
             </activation>
             
-            <build>
-                <pluginManagement>
-                    <plugins>
-                        <plugin>
-                            <groupId>org.eclipse.jetty</groupId>
-                            <artifactId>jetty-maven-plugin</artifactId>
-                            <configuration>
-                                <webApp>
-                                    <baseResource implementation="org.eclipse.jetty.util.resource.ResourceCollection">
-                                        <resourcesAsCSV>src/main/webapp,${basedir}/../target/gwt/launcherDir/</resourcesAsCSV>
-                                    </baseResource>
-                                </webApp>
-                                <systemProperties>
-                                    <systemProperty>
-                                        <name>gwt.codeserver.port</name>
-                                        <value>9876</value>
-                                    </systemProperty>
-                                </systemProperties>
-                            </configuration>
-                        </plugin>
-                    </plugins>
-                </pluginManagement>
-            </build>
+            <!-- Can I remove this as it's only for Jetty? -->
+            <!--<build>-->
+                <!--<pluginManagement>-->
+                    <!--<plugins>-->
+                        <!--<plugin>-->
+                            <!--<groupId>org.eclipse.jetty</groupId>-->
+                            <!--<artifactId>jetty-maven-plugin</artifactId>-->
+                            <!--<configuration>-->
+                                <!--<webApp>-->
+                                    <!--<baseResource implementation="org.eclipse.jetty.util.resource.ResourceCollection">-->
+                                        <!--<resourcesAsCSV>src/main/webapp,${basedir}/../target/gwt/launcherDir/</resourcesAsCSV>-->
+                                    <!--</baseResource>-->
+                                <!--</webApp>-->
+                                <!--<systemProperties>-->
+                                    <!--<systemProperty>-->
+                                        <!--<name>gwt.codeserver.port</name>-->
+                                        <!--<value>9876</value>-->
+                                    <!--</systemProperty>-->
+                                <!--</systemProperties>-->
+                            <!--</configuration>-->
+                        <!--</plugin>-->
+                    <!--</plugins>-->
+                <!--</pluginManagement>-->
+            <!--</build>-->
         </profile>
     </profiles>
 </project>

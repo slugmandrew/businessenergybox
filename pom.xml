@@ -15,12 +15,12 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <mavenVersion>3.0</mavenVersion>
+        <jdk.version>1.8</jdk.version>
+    
         <!-- WebApp/War Output Directory -->
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
+        
         <serverDirectory>${artifactId}-server</serverDirectory>
-        
-        
-        <jdk.version>1.8</jdk.version>
         
         <!-- Client -->
         <gwt.version>2.8.0-rc2</gwt.version>
@@ -30,6 +30,7 @@
         
         <!-- Plugins -->
         <gwt-maven-plugin.version>1.0-rc-6</gwt-maven-plugin.version>
+        
     </properties>
     
     <dependencyManagement>
@@ -73,15 +74,16 @@
                         <target>${jdk.version}</target>
                     </configuration>
                 </plugin>
-                
-                <plugin>
-                    <groupId>org.eclipse.jetty</groupId>
-                    <artifactId>jetty-maven-plugin</artifactId>
-                    <version>9.2.15.v20160210</version>
-                    <configuration>
-                        <skip>true</skip>
-                    </configuration>
-                </plugin>
+    
+                <!-- Can I remove this as it's only for Jetty? -->
+                <!--<plugin>-->
+                    <!--<groupId>org.eclipse.jetty</groupId>-->
+                    <!--<artifactId>jetty-maven-plugin</artifactId>-->
+                    <!--<version>9.2.15.v20160210</version>-->
+                    <!--<configuration>-->
+                        <!--<skip>true</skip>-->
+                    <!--</configuration>-->
+                <!--</plugin>-->
                 
                 <plugin>
                     <groupId>net.ltgt.gwt.maven</groupId>
