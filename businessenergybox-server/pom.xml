@@ -36,13 +36,13 @@
         <dependency>
             <groupId>com.google.appengine</groupId>
             <artifactId>appengine-api-1.0-sdk</artifactId>
-            <version>1.9.38</version>
+            <version>${appengine-sdk.version}</version>
         </dependency>
     
         <dependency>
             <groupId>com.google.appengine</groupId>
             <artifactId>appengine-tools-sdk</artifactId>
-            <version>1.9.38</version>
+            <version>${appengine-sdk.version}</version>
         </dependency>
         
     </dependencies>
@@ -54,7 +54,7 @@
             <plugin>
                 <groupId>com.google.appengine</groupId>
                 <artifactId>appengine-maven-plugin</artifactId>
-                <version>1.9.38</version>
+                <version>${appengine-sdk.version}</version>
                 <configuration>
                     <enableJarClasses>false</enableJarClasses>
                     <enableJarSplitting>true</enableJarSplitting>

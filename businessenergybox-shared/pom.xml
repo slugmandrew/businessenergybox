@@ -10,7 +10,7 @@
     </parent>
     
     <artifactId>businessenergybox-shared</artifactId>
-    <!-- has no packaging set for some reason? -->
+    <!-- has no packaging set - jar is default -->
     
     <prerequisites>
         <maven>${mavenVersion}</maven>
